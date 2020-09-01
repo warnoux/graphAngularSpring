@@ -15,6 +15,7 @@ public class Element {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     @Column(name = "poids")
     private Integer poids;
 

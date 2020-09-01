@@ -1,5 +1,17 @@
-<dl class="csslinegraph">
-    <dd *ngFor="let p of elements;  index as i;" [ngClass]="i === 0 ? 'first': ''">
-      <span [ngClass]="p.styleCss"><em><div> {{p.poids}} </div></em></span>
-    <dd>
-</dl>
+<header>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="../../assets/dumbbell-xxl.png" style="height: 30px; margin-right: 20px;">
+        <strong>My weight</strong>
+      </a>
+    </div>
+  </div>
+</header>
+<main style="padding: 20px;">
+  <dl class="csslinegraph">
+      <dd *ngFor="let p of elements;  index as i;" [ngClass]="i === 0 ? 'first': ''">
+        <span [ngClass]="p.styleCss"><em><div> {{p.poids}} </div></em></span>
+      <dd>
+  </dl>
+</main>

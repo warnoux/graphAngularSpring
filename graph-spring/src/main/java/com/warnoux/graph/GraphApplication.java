@@ -21,7 +21,7 @@ public class GraphApplication  implements CommandLineRunner {
     public void run(String... args) throws Exception {
         this.graphRepository.save(new Element(1));
         this.graphRepository.save(new Element(100));
-        this.graphRepository.save(new Element(1));
+        this.graphRepository.save(new Element(30));
         this.graphRepository.save(new Element(50));
         this.graphRepository.save(new Element(75));
         this.graphRepository.save(new Element(25));
