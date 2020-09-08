@@ -27,6 +27,5 @@ public class GraphApplication  implements CommandLineRunner {
         this.graphRepository.save(new Element(25));
         this.graphRepository.save(new Element(80));
         this.graphRepository.save(new Element(80));
-
     }
 }

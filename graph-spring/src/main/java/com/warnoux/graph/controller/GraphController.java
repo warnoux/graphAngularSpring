@@ -14,7 +14,6 @@ import java.util.List;
 @RestController
 @RequestMapping("api/")
 public class GraphController {
-
     @Autowired
     private GraphRepository graphRepository;
 
