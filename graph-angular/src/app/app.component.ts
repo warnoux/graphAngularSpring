@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Element} from './metier/element';
-import {GraphService} from "./graph.service";
+import {GraphService} from './graph.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import {GraphService} from "./graph.service";
 })
 export class AppComponent implements OnInit{
 
-  //weights = [1, 100, 1 , 50, 75, 25, 80, 80];
+  // weights = [1, 100, 1 , 50, 75, 25, 80, 80];
   weights;
   elements: Array<Element>;
   varCalculDifference = 100 / 30;
@@ -17,7 +17,7 @@ export class AppComponent implements OnInit{
   increase = 'i';
   decrease = 'd';
 
-  constructor(private graphService:GraphService) {  }
+  constructor(private graphService: GraphService) {  }
 
   ngOnInit(): void {
     this.elements = new Array<Element>();
